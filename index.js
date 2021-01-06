@@ -3,6 +3,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
+import path from 'path';
 import router from './routes/recipeRouter.js';
 dotenv.config();
 
@@ -11,12 +12,21 @@ const PORT = process.env.PORT || 8080;
 const MONGO_URI = process.env.MONGO_URI;
 
 
-app
-    .use(cors())
-    .use(express.json())
-    .use(bodyParser.urlencoded({ extended: true }))
-    .use('/recipes/', router)
-    .listen(PORT)
+if (process.env.NODE_ENV === 'production') {
+  app.use('/', express.static(path.join(__dirname, 'recipefrontend', 'build')));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'recipefrontend', 'build', 'index.html'));
+  })
+}
+
+
+app.use(cors())
+app.use(express.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+
+app.use('/recipes', router)
+app.listen(PORT)
 
 async function start() {
     try {
