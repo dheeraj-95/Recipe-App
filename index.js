@@ -11,19 +11,15 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 const MONGO_URI = process.env.MONGO_URI;
 
-
-if (process.env.NODE_ENV === 'production') {
-  app.use('/', express.static(path.join(__dirname, 'recipefrontend', 'build')));
-
-  app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'recipefrontend', 'build', 'index.html'));
-  })
-}
-
-
 app.use(cors())
 app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+
+app.use(express.static(path.join(__dirname, 'recipefrontend', 'build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'recipefrontend', 'build', 'index.html'));
+})
 
 app.use('/recipes', router)
 app.listen(PORT)
