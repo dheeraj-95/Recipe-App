@@ -3,7 +3,7 @@ import axios from 'axios'
 import { RecipeContext } from './RecipeContext.js'
 import { RecipeReducer } from './RecipeReducer.js'
 
-const url = 'http://localhost:8000/recipes'
+const url = 'https://online-recipee-app.herokuapp.com/recipes/';
 
 export const RecipeState = ({ children }) => {
   const [state, dispatch] = useReducer(RecipeReducer, { 
