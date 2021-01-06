@@ -12,8 +12,8 @@ Recipe App to perform CRUD operations on a Recipe
 
 ### Deployed Url's
 
-Backend App Deployed at 
-[Here](https://online-recipee-app.herokuapp.com/)
+Backend App Deployed
+[here](https://online-recipee-app.herokuapp.com/)
 
-Frontend App Deployed at
-[Here]()
+Frontend App Deployed
+[here]()

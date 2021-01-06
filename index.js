@@ -12,13 +12,13 @@ const PORT = process.env.PORT || 8080;
 const MONGO_URI = process.env.MONGO_URI;
 
 
-if (process.env.NODE_ENV === 'production') {
-  app.use('/', express.static(path.join(__dirname, 'recipefrontend', 'build')));
+// if (process.env.NODE_ENV === 'production') {
+//   app.use('/', express.static(path.join(__dirname, 'recipefrontend', 'build')));
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'recipefrontend', 'build', 'index.html'));
-  })
-}
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, 'recipefrontend', 'build', 'index.html'));
+//   })
+// }
 
 
 app.use(cors())
