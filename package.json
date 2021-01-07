@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx babel-node index.js",
-    "heroku-postbuild": "cd recipefrontend && npm install && npm run build"
+    "start": "npx babel-node index.js"
   },
   "author": "Dheeraj Gumudavelli",
   "license": "ISC",

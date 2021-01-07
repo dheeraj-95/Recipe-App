@@ -15,5 +15,5 @@ Recipe App to perform CRUD operations on a Recipe
 Backend App Deployed
 [here](https://online-recipee-app.herokuapp.com/)
 
-Frontend App Deployed
-[here]()
+Frontend App Deployed (Site is in Working State !!!)
+[here](https://wonderful-jepsen-cb50a2.netlify.app/)

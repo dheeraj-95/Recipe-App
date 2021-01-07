@@ -34,7 +34,7 @@ function App() {
             <div className="bd-grid">
               <Switch>
                 {/* <Route path="/" component={Home} exact /> */}
-                <Route path="/recipes" component={Recipes} exact />
+                <Route path="/" component={Recipes} exact />
                 {/* <Route path="/recipes/:id/" component={Recipe} exact />
                 <Route path="/recipes/:id/edit" component={RecipeEdit} />
                 <Route path="/create" component={Create} exact />

@@ -17,12 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.use('/recipes', router)
 
-app.use(express.static(path.join(__dirname, 'recipefrontend', 'build')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'recipefrontend', 'build', 'index.html'));
-})
-
 app.listen(PORT)
 
 async function start() {
