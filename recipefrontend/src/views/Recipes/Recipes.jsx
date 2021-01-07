@@ -30,7 +30,7 @@ const Recipes = () => {
 
   useEffect(() => {
     setRecipeList(recipes);
-    console.log(recipeList);
+    // console.log(recipeList);
   }, [recipes])
 
 //   useEffect(() => {
