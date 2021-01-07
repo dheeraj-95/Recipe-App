@@ -4,15 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx babel-node index.js",
-    "heroku-postbuild": "cd recipefrontend && npm install --only=dev && npm install && npm run build"
+    "start": "cross-env NODE_ENV=production npx babel-node index.js",
+    "heroku-postbuild": "cd recipefrontend && npm run build"
   },
   "author": "Dheeraj Gumudavelli",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.3.0",
     "cross-env": "^7.0.3",
-    "nodemon": "^2.0.6"
   },
   "dependencies": {
     "@babel/core": "^7.12.10",

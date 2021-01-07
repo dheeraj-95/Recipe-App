@@ -29,7 +29,8 @@ const Recipes = () => {
   },[]);
 
   useEffect(() => {
-    setRecipeList(recipes)
+    setRecipeList(recipes);
+    console.log(recipeList);
   }, [recipes])
 
 //   useEffect(() => {
@@ -40,7 +41,6 @@ const Recipes = () => {
 
 //     setRecipeList(filtered)
 //   }, [search])
-
   return (
     
     <>
