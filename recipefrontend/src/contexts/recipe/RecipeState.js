@@ -4,7 +4,7 @@ import { RecipeContext } from './RecipeContext.js'
 import { RecipeReducer } from './RecipeReducer.js'
 
 const url = 'https://online-recipee-app.herokuapp.com/recipes/';
-// const url = 'http://localhost:8000/recipes/';
+// const url = 'http://localhost:5000/recipes/';
 
 
 export const RecipeState = ({ children }) => {
