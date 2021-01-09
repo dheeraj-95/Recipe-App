@@ -1,12 +1,7 @@
 .buttons li {
   display: flex;
   align-items: center;
-  margin: var(--m-1) 0;
   cursor: pointer;
-}
-
-.buttons span {
-  margin-left: var(--m-1);
 }
 
 .recipe {
@@ -36,15 +31,4 @@
 
 .notFound {
   text-align: center;
-  font-weight: var(--font-normal);
-}
-
-@media screen and (max-width: 700px) {
-  .recipe {
-    grid-template-columns: 1fr;
-  }
-
-  .recipe > div:first-of-type {
-    grid-row: 2;
-  }
 }

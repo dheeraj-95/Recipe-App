@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
-import 'boxicons'
 import { LoadingSpinner } from '../../Components'
 import IconButton from '@material-ui/core/IconButton';
 import { RecipeContext } from '../../contexts/recipe/RecipeContext'
@@ -45,7 +44,6 @@ const Recipe = () => {
                     <IconButton aria-label="settings" >
                         <EditIcon style={{ color: 'blue' }} />
                       </IconButton>
-                      {/* <box-icon name="edit" color="var(--secondary)" /> */}
                       <span>Edit</span>  
                     </li>
                   </ul> 
