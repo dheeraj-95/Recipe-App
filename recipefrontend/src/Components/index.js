@@ -1,4 +1,4 @@
-// export { default as Navbar } from './Navbar/Navbar.jsx'
+export { default as Navbar } from './Navbar/Navbar'
 // export { default as Footer } from './Footer/Footer.jsx'
 export { default as LoadingSpinner } from './Spinner/LoadingSpinner'
 export { default as RecipeCard } from './RecipeCard/RecipeCard'

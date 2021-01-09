@@ -60,7 +60,6 @@ const Recipes = () => {
           </div>
       } */}
       <Container fixed>
-        <h2 className="title">Recipes</h2>
       {/* <div className={styles.recipes}> */}
       <Grid 
             container

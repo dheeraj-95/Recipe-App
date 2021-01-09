@@ -5,13 +5,12 @@ import {
   Route,
 } from 'react-router-dom'
 import { RecipeState } from './contexts/recipe/RecipeState'
-// import { ThemeState } from './contexts/theme/ThemeState'
 import { AlertState } from './contexts/alert/AlertState'
-// import { Navbar, Footer, Alert } from './components'
+import { Navbar } from './Components'
 import { 
 //   Home, 
   Recipes, 
-  // Recipe, 
+  Recipe, 
 //   RecipeEdit,
 //   Create,
 //   NotFound
@@ -30,13 +29,13 @@ function App() {
         <AlertState>
           <Router>
             {/* <Alert /> */}
-            {/* <Navbar /> */}
+            <Navbar />
             <div className="bd-grid">
               <Switch>
                 {/* <Route path="/" component={Home} exact /> */}
-                <Route path="/" component={Recipes} exact />
-                {/* <Route path="/recipes/:id/" component={Recipe} exact />
-                <Route path="/recipes/:id/edit" component={RecipeEdit} />
+                <Route path="/recipes" component={Recipes} exact />
+                <Route path="/recipes/:id/" component={Recipe} exact />
+                {/*<Route path="/recipes/:id/edit" component={RecipeEdit} />
                 <Route path="/create" component={Create} exact />
                 <Route path="*" component={NotFound} /> */}
               </Switch>
